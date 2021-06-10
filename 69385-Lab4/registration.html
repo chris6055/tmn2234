@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Registration Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <script src="javaScript.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                User Account Registration
+            </div>
+            <form action="dbConnection.php" method="POST" name="myForm">
+                
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input id="firstName" type="text" placeholder="Enter first name" name = "firstName">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input id="lastName" type="text" placeholder="Enter last name" name = "lastName">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">E-mail</span>
+                        <input id="email" type="text" placeholder="Enter e-mail address" name = "email">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Mobile</span>
+                        <input id="phoneNumber" type="text" placeholder="+60" name = "phoneNumber">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input id="password" type="password" placeholder="Enter password" name = "password">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input id="password2" type="password" placeholder="Confirm password" name = "password2">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">State</span>
+                        <select name="state" id="state">
+                            <option value="" id="">Choose an option</option>
+                            <option value="johor">Johor</option>
+                            <option value="kedah">Kedah</option>
+                            <option value="kelantan">Kelantan</option>
+                            <option value="kualalumpur">Kuala Lumpur</option>
+                            <option value="labuan">Labuan</option>
+                            <option value="melaka">Melaka</option>
+                            <option value="negerisembilan">Negeri Sembilan</option>
+                            <option value="pahang">Pahang</option>
+                            <option value="penang">Penang</option>
+                            <option value="perak">Perak</option>
+                            <option value="perlis">Perlis</option>
+                            <option value="putrajaya">Putrajaya</option>
+                            <option value="sabah">Sabah</option>
+                            <option value="sarawak">Sarawak</option>
+                            <option value="selangor">Selangor</option>
+                            <option value="terengganu">Terengganu</option>
+                        </select>
+                        <small>Error Message</small>
+                        <!-- <input id="State" type="text" placeholder="Select state" name = "State" required> -->
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot_1" value="Male">
+                    <input type="radio" name="gender" id="dot_2" value="Female">
+                    <span class="gender-title">Gender</span>
+                    <div class= "category">
+                        <label for="dot_1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot_2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <small>Error Message</small>
+                    </div>
+                </div>
+                <div class="tnc-details">
+                    <input type="radio" name="tnc" id="dot_3" >
+                    <span class="tnc-title">Terms and conditions</span>
+                    <div class="category">
+                        <label for="dot_3">
+                            <span class="dot three"></span>
+                            <span class="tnc">I accept the above Term and Conditions</span>
+                        </label>
+                        <small>Error Message</small>
+                    </div>
+                    <!-- <span class="tnc-title">Terms and conditions</span>
+                    <div>
+                        <input type="checkbox" name="checkbox" value="checkbox" id="checkbox"/> 
+                        <span class="tnc">I accept the Terms and Conditions.</span>
+                    </div> -->
+                </div>
+                
+                <div class="button">
+                    <button class= "b1" id="submit" type="submit" name="submit">Register</button>
+                    <!-- <input type="submit" value="Register">
+                    <input type="reset" value="Clear"> -->
+					<button class= "b1" id="reset" type="reset" name="reset">Clear</button>
+					
+				</div>
+                <!-- <button type="submit">Register</button> -->
+            </form>
+        </div>
+    </body>
+</html>
